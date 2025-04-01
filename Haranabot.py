@@ -3,6 +3,9 @@ from telegram.ext import Application, CommandHandler, MessageHandler, filters, C
 import os
 from dotenv import load_dotenv
 import logging
+from keep_alive import keep_alive
+
+keep_alive()
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
